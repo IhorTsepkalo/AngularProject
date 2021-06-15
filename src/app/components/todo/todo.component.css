@@ -1,0 +1,8 @@
+div {
+  display: flex;
+  justify-content: start;
+}
+
+#status {
+  color: tomato;
+}
