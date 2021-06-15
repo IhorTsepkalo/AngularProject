@@ -1,9 +1,14 @@
 #main{
   font-size: 20px;
+  font-family: Arial;
 }
 .cur{
   display: flex;
   justify-content: start;
+}
+.header{
+  font-size: 20px;
+  font-family: "Cooper Black";
 }
 #buy{
   color: red;
