@@ -9,6 +9,8 @@ import { PostsComponent } from './components/posts/posts.component';
 import { PostComponent } from './components/post/post.component';
 import { TodosComponent } from './components/todos/todos.component';
 import { TodoComponent } from './components/todo/todo.component';
+import { CurrenciesComponent } from './components/currencies/currencies.component';
+import { CurrencyComponent } from './components/currency/currency.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { TodoComponent } from './components/todo/todo.component';
     PostsComponent,
     PostComponent,
     TodosComponent,
-    TodoComponent
+    TodoComponent,
+    CurrenciesComponent,
+    CurrencyComponent
   ],
   imports: [
     BrowserModule,

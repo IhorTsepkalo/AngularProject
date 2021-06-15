@@ -1,0 +1,13 @@
+#main{
+  font-size: 20px;
+}
+.cur{
+  display: flex;
+  justify-content: start;
+}
+#buy{
+  color: red;
+}
+#sale{
+  color: red;
+}
