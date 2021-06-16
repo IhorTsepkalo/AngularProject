@@ -1,2 +1,8 @@
-
-<app-post *ngFor="let p of posts" [post]="p"></app-post>
+<div id="just">
+  <div id="postsList">
+    <app-post *ngFor="let p of posts" [post]="p"></app-post>
+  </div>
+  <div id="postsDets">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -11,6 +11,11 @@ import { TodosComponent } from './components/todos/todos.component';
 import { TodoComponent } from './components/todo/todo.component';
 import { CurrenciesComponent } from './components/currencies/currencies.component';
 import { CurrencyComponent } from './components/currency/currency.component';
+import {RouterModule, Routes} from "@angular/router";
+import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { PostDetailsComponent } from './components/post-details/post-details.component';
+
+let routes: Routes = [{path:'users', component:UsersComponent, children:[{path:':id', component:UserDetailsComponent}]}, {path:'posts', component:PostsComponent, children:[{path: ':id', component: PostDetailsComponent}]}, {path:'todos', component:TodosComponent}]
 
 
 @NgModule({
@@ -23,12 +28,15 @@ import { CurrencyComponent } from './components/currency/currency.component';
     TodosComponent,
     TodoComponent,
     CurrenciesComponent,
-    CurrencyComponent
+    CurrencyComponent,
+    UserDetailsComponent,
+    PostDetailsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

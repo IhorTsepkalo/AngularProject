@@ -1,7 +1,16 @@
 
 h1{
-  background: aquamarine;
+  background: #ffb184;
   width: 100%;
   display: flex;
   justify-content: center;
+}
+#ul {
+  display: flex;
+  justify-content: start;
+  margin: 10px;
+  font-size: 20px;
+}
+.li {
+  margin: 10px;
 }

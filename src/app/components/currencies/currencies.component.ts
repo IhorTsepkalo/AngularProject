@@ -12,6 +12,8 @@ export class CurrenciesComponent implements OnInit {
   @Input()
   calculatorEnum: EBasecurrency;
   currencies: Currency[] = [];
+  amountOfMoney = document.getElementById('amountOfMoney');
+
 
   constructor(private currecyServise: CurrencyService) {
   }
@@ -20,8 +22,9 @@ export class CurrenciesComponent implements OnInit {
     this.currecyServise.getCurrencyRate().subscribe(value => {
       this.currencies = value;
     })
-
-
+  }
+  calc(): void {
+    console.log(this.amountOfMoney)
   }
 
 }

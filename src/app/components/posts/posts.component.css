@@ -1,0 +1,16 @@
+#just {
+  display: flex;
+  justify-content: start;
+  border: silver solid 2px;
+ }
+#postsList {
+  border: silver solid 1px;
+  padding: 10px;
+  margin: 10px;
+}
+#postsDets {
+  border: silver solid 1px;
+  height: fit-content;
+  padding: 10px;
+  margin: 10px;
+}
