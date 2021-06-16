@@ -1,0 +1,18 @@
+#mainDisp {
+  display: flex;
+}
+#currTable {
+  border: silver solid 2px;
+  margin: 10px;
+  padding: 10px;
+}
+#calculator {
+  border: silver solid 2px;
+  margin: 10px;
+  padding: 10px;
+}
+#moneyToGet {
+  font-family: "Arial Black";
+  font-size: 50px;
+  color: red;
+}

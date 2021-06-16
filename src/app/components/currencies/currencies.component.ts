@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {CurrencyService} from "../../services/currency.service";
 import {Currency} from "../../interfaces/Currency";
+import {EBasecurrency} from "../basecurrencyEnum";
 
 @Component({
   selector: 'app-currencies',
@@ -8,9 +9,9 @@ import {Currency} from "../../interfaces/Currency";
   styleUrls: ['./currencies.component.css']
 })
 export class CurrenciesComponent implements OnInit {
-
+  @Input()
+  calculatorEnum: EBasecurrency;
   currencies: Currency[] = [];
-
 
   constructor(private currecyServise: CurrencyService) {
   }
@@ -19,6 +20,9 @@ export class CurrenciesComponent implements OnInit {
     this.currecyServise.getCurrencyRate().subscribe(value => {
       this.currencies = value;
     })
+
+
   }
 
 }
+

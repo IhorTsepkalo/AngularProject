@@ -1,3 +1,38 @@
-<app-currency *ngFor="let c of currencies" [currency]="c">
+<div id="mainDisp">
+  <div id="currTable">
+    <h2>Currency Rates:</h2>
+    <app-currency *ngFor="let c of currencies" [currency]="c">
 
-</app-currency>
+    </app-currency>
+  </div>
+  <div id="calculator">
+    <h2>Currency Calculator:</h2>
+    <form>
+  <div>
+    <select id="sellCur">
+      <option> USD</option>
+      <option> UAH</option>
+      <option> EUR</option>
+      <option> BTC </option>;
+ </select> (choose currency you want to sell)</div>
+  <br>
+  <div> <input type="text" id="amountOfMoney">(enter amount of money that you are selling)</div>
+  <br>
+  <div>
+    <select id="buyCur">
+      <option> USD</option>
+      <option> UAH</option>
+      <option> EUR</option>
+      <option> BTC </option>;
+    </select> (choose currency you want to buy)</div>
+</form>
+    <h1></h1>
+    <div id="confButt">
+      <button>confirm</button>
+    </div>
+    <br>
+    You will get:
+    <div id="moneyToGet"></div>
+  </div>
+</div>
+
